@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Technical Communication Students</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.2.1.css" rel="stylesheet">
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  </head>
+  <body>
+	 	
+	 <img src="images/background.svg" alt="sample" style="width: 100%">
+	<nav class="row">
+		<div class="col-1" style="background-color: #85A864"></div>
+		<div class="col-2" style="background-color: #D85052; border: solid .25px grey;">
+			<center><a href="definition.html">The Definition</a></center>
+		</div>
+		<div class="col-2" style="background-color: #D85052; border: solid .25px grey;">
+			<center><a href="index.html">Student Stories</a></center>
+		</div>
+		<div class="col-2" style="background-color: white; box-shadow: 1px -4px 8px;">
+			<center><h4><a href="ISUdata.html" style="color: #C8102E;">ISU Data</a></h4></center>
+		</div>
+		<div class="col-5" style="background-color: #85A864"></div>
+	</nav>
+    <div class="container">
+      <h2>Enrollment in Technical Communication</h2>
+		<p>The Iowa State Office of Registrar keeps detailed reports of student data in the Fact Book. <a href="https://www.registrar.iastate.edu/enrollment/enrollment-by-major" target="_blank">The "Enrollment by Major or Department" report </a> contains information on enrollment by major for undergraduates (freshmen, sophomores, juniors, and seniors) and by sex. Below is the information from the fact books that directly relates to technical communication. The charts below start off showing the past five years of data, but you can drag the handles to reveal more or less data.</p>
+		<hr>
+      <div class="container">
+		<div class="row">
+			<h4>Total vs Male vs Female Technical Communication Students from Fall 2001 - Fall 2019</h4>
+			<div id="dashboard" class="col-12">
+				<div id="chart" style="width: 100%; height: 300px;"></div>
+				<div id="control" style="width: 90%; height: 50px;"></div>
+			</div>
+		 </div>
+      </div>
+		<br>
+		 <div class="container">
+		<div class="row">
+			<h4>Total vs Classification of Technical Communication Students from Fall 2001 - Fall 2019</h4>
+			<div id="dashboard2" class="col-12">
+				<div id="chart2" style="width: 100%; height: 300px;"></div>
+				<div id="control2" style="width: 90%; height: 50px;"></div>
+			</div>
+		 </div>
+      </div>
+      <hr>
+    </div>
+	  
+	  <footer class="text-center">
+        <div class="container">
+		  <div class="row">
+            <div class="col-3">
+			 <br>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfd2ESoxR7RbpYvOzNvRKUrqE_KpdgNezmF5va1QHAiMmwnPg/viewform?usp=sf_link" target="_blank" style="color: white"><img src="images/studentform.png" style="width: 25%; margin: .5em"></a>
+				<br>
+				<h6><a href="https://docs.google.com/forms/d/e/1FAIpQLSfd2ESoxR7RbpYvOzNvRKUrqE_KpdgNezmF5va1QHAiMmwnPg/viewform?usp=sf_link" target="_blank" style="color: white; text-decoration: none;">Student Form</a></h6>
+            </div>
+			<div class="col-3">
+			 <br>
+              <a href="https://www.registrar.iastate.edu/enrollment/enrollment-by-major" target="_blank" style="color: white"><img src="images/factbook.png" style="width: 25%;  margin: .5em"></a>
+				<br>
+				<h6><a href="https://www.registrar.iastate.edu/enrollment/enrollment-by-major" target="_blank" style="color: white; text-decoration: none;">ISU Fact Book</a></h6>
+            </div>
+			<div class="col-3">
+			 <br>
+             <a href="https://engl.iastate.edu/undergraduate-students/majors/technical-communication-b-s-or-minor/" target="_blank" style="color: white"><img src="images/tchomepage.png" style="width: 25%; margin: .5em"></a>
+				<br>
+				<h6><a href="https://engl.iastate.edu/undergraduate-students/majors/technical-communication-b-s-or-minor/" target="_blank" style="color: white; text-decoration: none;">Iowa State Technical<br>Communication Homepage</a></h6>
+            </div>
+			<div class="col-3">
+			 <br>
+             <a href="http://catalog.iastate.edu/collegeofliberalartsandsciences/technicalcommunication/" target="_blank" style="color: white"><img src="images/tcclasses.png" style="width: 25%; margin: .5em"></a>
+				<br>
+				<h6><a href="http://catalog.iastate.edu/collegeofliberalartsandsciences/technicalcommunication/" target="_blank" style="color: white; text-decoration: none;">Technical Communication<br>Courses</a></h6>
+            </div>
+          </div>
+  
+        </div>
+	  </footer>
+	  
+	  <script>
+	   google.load('visualization', '1.1', {packages: ['corechart', 'controls']});
+		  
+function drawVisualization() {
+  var dashboard = new google.visualization.Dashboard(
+       document.getElementById('dashboard'));
+
+   var control = new google.visualization.ControlWrapper({
+     'controlType': 'ChartRangeFilter',
+     'containerId': 'control',
+     'options': {
+       // Filter by the date axis.
+       'filterColumnIndex': 0,
+       'ui': {
+         'chartType': 'LineChart',
+         'chartOptions': {
+         'chartArea': {'width': '90%'},
+             
+         },
+         // Display a single series that shows the closing value of the stock.
+         // Thus, this view has two columns: the date (axis) and the stock value (line series).
+         'chartView': {
+           'columns': [0, 3]
+         },
+        
+       }
+     },
+     // Initial range: 2012-02-09 to 2012-03-20.
+     'state': {'range': {'start': new Date(2014, 7, 1), 'end': new Date(2019, 7, 1)}}
+   });
+
+   var chart = new google.visualization.ChartWrapper({
+     'chartType': 'LineChart',
+     'containerId': 'chart',
+     'options': {
+       // Use the same chart area width as the control for axis alignment.
+       'chartArea': {'height': '80%', 'width': '90%'},
+       'hAxis': {'slantedText': false},
+       'vAxis': {'viewWindow': {'min': 0, 'max': 30}},
+       'legend': {'position': 'top'},
+		colors: ['F1BE48', 'C8102E', 'AFAFAF'],
+		lineWidth: 3,
+     },
+   });
+
+    var data = new google.visualization.DataTable();
+    data.addColumn('date', 'X');
+    data.addColumn('number', 'Male Students');
+    data.addColumn('number', 'Female Students');
+	data.addColumn('number', 'Total Students');
+
+    data.addRow([new Date(2019, 7, 1), 7,14,21]);
+	data.addRow([new Date(2019, 0, 1), 10,10,20]);
+    data.addRow([new Date(2018, 7, 1), 9,10,19]);
+	data.addRow([new Date(2018, 0, 1), 8,8,16]);
+    data.addRow([new Date(2017, 7, 1), 10,9,19]);
+	data.addRow([new Date(2017, 0, 1), 14,7,21]);
+    data.addRow([new Date(2016, 7, 1), 16,7, 23]);
+	data.addRow([new Date(2016, 0, 1), 17,11,28]);
+    data.addRow([new Date(2015, 7, 1), 14,11,25]);
+	data.addRow([new Date(2015, 0, 1), 11,7,18]);
+    data.addRow([new Date(2014, 7, 1), 8,8,16]);
+	data.addRow([new Date(2014, 0, 1), 6,5,11]);
+    data.addRow([new Date(2013, 7, 1), 7,7,14]);
+	data.addRow([new Date(2013, 0, 1), 7,5,12]);
+    data.addRow([new Date(2012, 7, 1), 9,11, 20 ]);
+	data.addRow([new Date(2012, 0, 1), 10,14,24]);
+    data.addRow([new Date(2011, 7, 1), 9,18,27]);
+	data.addRow([new Date(2011, 0, 1), 6,15,21]);
+    data.addRow([new Date(2010, 7, 1), 7,14,21]);
+	data.addRow([new Date(2010, 0, 1), 15,7,22]);
+    data.addRow([new Date(2009, 7, 1), 6,14,20]);
+	data.addRow([new Date(2009, 0, 1), 7,11,18]);
+    data.addRow([new Date(2008, 7, 1), 7,6,13 ]);
+	data.addRow([new Date(2008, 0, 1), 12,3,15]);
+    data.addRow([new Date(2007, 7, 1), 12,3, 15 ]);
+	data.addRow([new Date(2007, 0, 1), 12,5,17]);
+    data.addRow([new Date(2006, 7, 1), 11,5, 16 ]);
+    data.addRow([new Date(2006, 0, 1), 11,6,17 ]);
+    data.addRow([new Date(2005, 7, 1), 8,7,15 ]);
+    data.addRow([new Date(2005, 0, 1), 10,8,18 ]);
+    data.addRow([new Date(2004, 7, 1), 8,7,15 ]);
+    data.addRow([new Date(2004, 0, 1), 10,7, 17 ]);
+    data.addRow([new Date(2003, 7, 1), 9,5,14 ]);
+    data.addRow([new Date(2003, 0, 1), 11,7,18 ]);
+    data.addRow([new Date(2002, 7, 1), 8,5,13 ]);
+    data.addRow([new Date(2002, 0, 1), 6,4,10 ]);
+    data.addRow([new Date(2001, 7, 1), 0,2,2 ]); /* fall */
+
+  /* Change the format of the date column, used in chart, but not chart range filter */  
+  var formatter = new google.visualization.DateFormat({pattern: "dd.MM.yyyy"});
+  formatter.format(data, 0);
+
+  
+   dashboard.bind(control, chart);
+   dashboard.draw(data);
+}
+
+    google.setOnLoadCallback(drawVisualization);
+	  </script>
+	  
+     <script>
+	   google.load('visualization', '1.1', {packages: ['corechart', 'controls']});
+		  
+function drawVisualization() {
+  var dashboard = new google.visualization.Dashboard(
+       document.getElementById('dashboard2'));
+
+   var control = new google.visualization.ControlWrapper({
+     'controlType': 'ChartRangeFilter',
+     'containerId': 'control2',
+     'options': {
+       // Filter by the date axis.
+       'filterColumnIndex': 0,
+       'ui': {
+         'chartType': 'LineChart',
+         'chartOptions': {
+           'chartArea': {'width': '90%'},
+			 snapToData: true,
+             
+         },
+         // Display a single series that shows the closing value of the stock.
+         // Thus, this view has two columns: the date (axis) and the stock value (line series).
+         'chartView': {
+           'columns': [0, 5]
+         },
+        
+       }
+     },
+     // Initial range: 2012-02-09 to 2012-03-20.
+     'state': {'range': {'start': new Date(2014, 7, 1), 'end': new Date(2019, 7, 1)}}
+   });
+
+   var chart = new google.visualization.ChartWrapper({
+     'chartType': 'LineChart',
+     'containerId': 'chart2',
+     'options': {
+       // Use the same chart area width as the control for axis alignment.
+       'chartArea': {'height': '80%', 'width': '90%'},
+       'hAxis': {'slantedText': false},
+       'vAxis': {'viewWindow': {'min': 0, 'max': 30}},
+       'legend': {'position': 'top'},
+		colors: ['C8102E', 'F1BE48', '9B945F', '006BA6', 'AFAFAF'],
+		lineWidth: 3,
+     },
+   });
+
+    var data = new google.visualization.DataTable();
+    data.addColumn('date', 'X');
+    data.addColumn('number', 'Freshman');
+    data.addColumn('number', 'Sophomores');
+	data.addColumn('number', 'Juniors');
+	data.addColumn('number', 'Seniors');
+	data.addColumn('number', 'Total Students');
+
+    data.addRow([new Date(2019, 7, 1), 3,3,2,13,21]);
+	data.addRow([new Date(2019, 0, 1), 1,1,5,13,20]);
+    data.addRow([new Date(2018, 7, 1), 1,0,9,9,19]);
+	data.addRow([new Date(2018, 0, 1), 1,5,5,5,16]);
+    data.addRow([new Date(2017, 7, 1), 0,4,6,9,19]);
+	data.addRow([new Date(2017, 0, 1), 1,6,5,9,21]);
+    data.addRow([new Date(2016, 7, 1), 0,4,7,12,23]);
+	data.addRow([new Date(2016, 0, 1), 2,1,11,14,28]);
+    data.addRow([new Date(2015, 7, 1), 0,3,13,9,25]);
+	data.addRow([new Date(2015, 0, 1), 0,2,11,5,18]);
+    data.addRow([new Date(2014, 7, 1), 1,6,7,2,16]);
+	data.addRow([new Date(2014, 0, 1), 1,1,5,4,11]);
+    data.addRow([new Date(2013, 7, 1), 1,2,3,8,14]);
+	data.addRow([new Date(2013, 0, 1), 0,1,3,8,12]);
+    data.addRow([new Date(2012, 7, 1), 0,2,9,8, 20]);
+	data.addRow([new Date(2012, 0, 1), 0,2,8,14,24]);
+    data.addRow([new Date(2011, 7, 1), 2,3,12,10,27]);
+	data.addRow([new Date(2011, 0, 1), 1,2,8,10,21]);
+    data.addRow([new Date(2010, 7, 1), 0,4,10,7,21]);
+	data.addRow([new Date(2010, 0, 1), 1,6,8,7,22]);
+    data.addRow([new Date(2009, 7, 1), 2,8,6,4,20]);
+	data.addRow([new Date(2009, 0, 1), 3,7,3,5,18]);
+    data.addRow([new Date(2008, 7, 1), 2,2,3,6,13]);
+	data.addRow([new Date(2008, 0, 1), 1,1,4,9,15]);
+    data.addRow([new Date(2007, 7, 1), 1,1,4,9, 15 ]);
+	data.addRow([new Date(2007, 0, 1), 0,3,5,9,17]);
+    data.addRow([new Date(2006, 7, 1), 1,3,5,7,16 ]);
+    data.addRow([new Date(2006, 0, 1), 0,6,4,5,17 ]);
+    data.addRow([new Date(2005, 7, 1), 1,3,2,9,15 ]);
+    data.addRow([new Date(2005, 0, 1), 1,3,2,12,18 ]);
+    data.addRow([new Date(2004, 7, 1), 0,1,3,11,15 ]);
+    data.addRow([new Date(2004, 0, 1), 0,2,7,8,17 ]);
+    data.addRow([new Date(2003, 7, 1), 0,4,5,5,14 ]);
+    data.addRow([new Date(2003, 0, 1), 4,2,9,3,18 ]);
+    data.addRow([new Date(2002, 7, 1), 4,3,3,3,13 ]);
+    data.addRow([new Date(2002, 0, 1), 1,3,4,2,10 ]);
+    data.addRow([new Date(2001, 7, 1), 1,1,0,0,2 ]); /* fall */
+
+  /* Change the format of the date column, used in chart, but not chart range filter */  
+  var formatter = new google.visualization.DateFormat({pattern: "dd.MM.yyyy"});
+  formatter.format(data, 1);
+
+  
+   dashboard.bind(control, chart);
+   dashboard.draw(data);
+}
+
+    google.setOnLoadCallback(drawVisualization);
+	  </script>
+	  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.2.1.js"></script>
+  </body>
+</html>

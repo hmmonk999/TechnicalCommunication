@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Technical Communication Students</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.2.1.css" rel="stylesheet">
+	  
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Female',     9],
+          ['Male',      1]
+        ]);
+
+        var options = {
+			slices: {
+            0: { color: '#A81E29' },
+            1: { color: 'gold' }
+          }
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+	 	
+	<img src="images/background.svg" alt="sample" style=" width: 100%">
+	<nav class="row">
+		<div class="col-1" style="background-color: #85A864"></div>
+		<div class="col-2" style="background-color: #D85052; border: solid .25px grey;">
+			<center><a href="definition.html">The Definition</a></center>
+		</div>
+		<div class="col-2" style="background-color: white; box-shadow: 1px -4px 8px;">
+			<center><h4><a href="#" style="color: #C8102E;">Student Stories</a></h4></center>
+		</div>
+		<div class="col-2" style="background-color: #D85052; border: solid .25px grey;">
+			<center><a href="ISUdata.html">ISU Data</a></center>
+		</div>
+		<div class="col-5" style="background-color: #85A864"></div>
+	</nav>
+    <div class="container">
+      <h2>Tech Comm Students</h2>
+		<p>Ten students answered an anonymous survey about their experience at Iowa State as technical communication majors. The survey was intended to show the diversity in interests technical communication students have and show potential students what it is like to be a tech comm major at Iowa State.</p>
+		
+		<p style="color: grey">Click on the student icons to learn more about their individual journies in Technical Communication.</p>
+      <div class="container">
+        <div class="row text-center">
+			<div class="col-sm-3 col-12 p-0"><div class="img-thumbnail"> 
+				<div class="row">
+					<div class="col-4">
+						<img src="images/blueGirlHead.png" alt="sample" style=" width: 100%;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+					</div>
+					<div class="col-8">
+						<h6 style="color: #20c1dd">Student A</h6>
+						<h5  style="font-size: 100%;">Senior in Technical Communcation</h5>
+						<hr>
+					</div>
+					<div class="col-12">
+						<p style="font-size: 90%;">Major(s): Technical Communication<br>
+						   Minor(s): Digital Media
+						</p>
+					</div>
+				</div></div></div>
+			
+          <div class="col-sm-3 col-12 p-0"><div class="img-thumbnail"> 
+				<div class="row">
+					<div class="col-4">
+						<img src="images/yellowGirlHead.png" alt="sample" style=" width: 100%"; onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+					</div>
+					<div class="col-8">
+						<h6 style="color: #fcc71b">Student B</h6>
+						<h5  style="font-size: 100%;">Senior in Technical Communcation</h5>
+						<hr>
+					</div>
+					<div class="col-12">
+						<p style="font-size: 90%;">Major(s): Technical Communication<br>
+							<span style="color: white">Major(s): </span>Philosophy
+						</p>
+					</div>
+				</div></div></div>
+			
+        <div class="col-sm-3 col-12 p-0"><div class="img-thumbnail"> 
+				<div class="row">
+					<div class="col-4">
+						<img src="images/pinkGirlHead.png" alt="sample" style=" width: 100%;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+					</div>
+					<div class="col-8">
+						<h6 style="color: #ee2a7b">Student C</h6>
+						<h5 style="font-size: 100%;">Senior in Technical Communcation</h5>
+						<hr>
+					</div>
+					<div class="col-12">
+						<p style="font-size: 90%;">Major(s): Technical Communication<br>
+							<span style="color: white">Major(s): </span>English
+						</p>
+					</div>
+				</div></div></div>
+			
+			<div class="col-sm-3 col-12 p-0"><div class="img-thumbnail"> 
+				<div class="row">
+					<div class="col-4">
+						<img src="images/LIGHTyellowHead.png" alt="sample" style=" width: 100%;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+					</div>
+					<div class="col-8">
+						<h6 style="color: #97c440">Student D</h6>
+						<h5 style="font-size: 100%;">Senior in Technical Communcation</h5>
+						<hr>
+					</div>
+					<div class="col-12">
+						<p style="font-size: 90%;">Major(s): Technical Communication<br>
+						</p>
+					</div>
+				</div></div></div>
+			<br>
+			<!––Start of Second Row---------------------------------------------------------- -->
+			
+			<div class="col-sm-3 col-12 p-0 row1">
+				<div class="img-thumbnail"> 
+				<div class="row">
+					<div class="col-4">
+						<img src="images/greenGirlHead.png" alt="sample" style=" width: 100%;" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+					</div>
+					<div class="col-8">
+						<h6 style="color: #E6E501;">Student E</h6>
+						<h5 style="font-size: 100%;">Senior in Technical Communcation</h5>
+						<hr>
+					</div>
+					<div class="col-12">
+						<p style="font-size: 90%;">Major(s): Technical Communication<br>
+						   Minor(s): Design Studies<br>
+						  <span style="color: white">Minor(s): </span>Computer Science
+						</p>
+					</div>
+				</div></div></div>		
+			
+          <div class="col-sm-3 col-12 p-0 row1"><div class="img-thumbnail"> 
+				<div class="row">
+					<div class="col-4">
+						<img src="images/purpleGirlHead.png" alt="sample" style=" width: 100%;" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+					</div>
+					<div class="col-8">
+						<h6 style="color: #512b7b">Student F</h6>
+						<h5 style="font-size: 100%;">Junior in Technical Communcation</h5>
+						<hr>
+					</div>
+					<div class="col-12">
+						<p style="font-size: 90%;">Major(s): Technical Communication<br>
+							<span style="color: white">Major(s): </span>Communication Studies<br>
+							Minor(s): French
+						</p>
+					</div>
+				</div></div></div>
+			
+   
+			<div class="col-sm-3 col-12 p-0 row1"><div class="img-thumbnail"> 
+				<div class="row">
+					<div class="col-4">
+						<img src="images/orangeBoiHead.png" alt="sample" style=" width: 100%;" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+					</div>
+					<div class="col-8">
+						<h6 style="color: #f26722">Student G</h6>
+						<h5 style="font-size: 100%;">Junior in Technical Communcation</h5>
+						<hr>
+					</div>
+					<div class="col-12">
+						<p style="font-size: 90%;">Major(s): Technical Communication<br>
+						<span style="color: white">Major(s): </span>English<br>
+						   Minor(s): International Studies
+						</p>
+					</div>
+				</div></div></div>
+			
+			 <div class="col-sm-3 col-12 p-0 row1"><div class="img-thumbnail"> 
+				<div class="row">
+					<div class="col-4">
+						<img src="images/redGirlHead.png" alt="sample" style=" width: 100%;" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+					</div>
+					<div class="col-8">
+						<h6 style="color: #ed1c24">Student H</h6>
+						<h5 style="font-size: 100%;">Junior in Technical Communcation</h5>
+						<hr>
+					</div>
+					<div class="col-12">
+						<p style="font-size: 90%;">Major(s): Technical Communication<br>
+							<span style="color: white">Major(s): </span>Linguistics<br>
+							Minor(s): TESL/TEFL
+						</p>
+					</div>
+				</div></div></div>
+			<br>
+			<!––Start of Throw Row---------------------------------------------------------- -->
+			
+          <div class="col-sm-3 col-12 p-0 row2"><div class="img-thumbnail"> 
+				<div class="row">
+					<div class="col-4">
+						<img src="images/NavyGirlHead.png" alt="sample" style=" width: 100%;" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+					</div>
+					<div class="col-8">
+						<h6 style="color: #2b3990">Student I</h6>
+						<h5 style="font-size: 90%;">Sophomore in Technical Communcation</h5>
+						<hr>
+					</div>
+					<div class="col-12">
+						<p style="font-size: 90%;">Major(s): Technical Communication<br>
+						   Minor(s): General Business
+						</p>
+					</div>
+				</div></div></div>
+			
+		  <div class="col-sm-3 col-12 p-0 row2"><div class="img-thumbnail"> 
+				<div class="row">
+					<div class="col-4">
+						<img src="images/DarkGREENHead.png" alt="sample" style=" width: 100%;" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+					</div>
+					<div class="col-8">
+						<h6 style="color: #0D4A09">Student J</h6>
+						<h5 style="font-size: 90%;">Freshman in Technical Communcation</h5>
+						<hr>
+					</div>
+					<div class="col-12">
+						<p style="font-size: 90%;">Major(s): Technical Communication<br>
+							<span style="color: white">Majors(s):</span> English
+						</p>
+					</div>
+				</div></div></div>
+			
+        <div class="col-sm-6 col-12 p-0 row2"><div> 
+				<div class="row">
+				</div></div></div>
+			
+			<!––End of Throw Row---------------------------------------------------------- -->
+			<h6><a href="#" id="openRowsButton" onclick="myFunctionOpenRows()">Click to expand...</a></h6>
+			<h6><a href="#" id="closeRowsButton" onclick="myFunctionCloseRows()">Show less...</a></h6>
+		  </div>
+      </div>
+      <hr>		
+
+<div id="LightmyModal" class="Lightmodal">
+  <span class="Lightclose Lightcursor" onclick="closeModal()">&times;</span>
+  <div class="Lightmodal-content">
+
+    <div class="LightmySlides">
+      <div class="Lightnumbertext">1 / 10</div>
+	  <div class="container"><div class="row">
+		<div class="col-2"><img src="images/people_LightBlue.png" style="width:100%"></div>
+		<div class="col-10">
+		<h1 style="color: #20c1dd">Student A <span style="font-size: 50%">(Senior)</span></h1>
+		<p>Major(s): Technical Communication</p>
+		<p>Minor(s): Digital Media</p>
+		<hr style="margin-top:1rem; margin-bottom:1rem;">
+		<p><span style="color: #20c1dd; font-weight: 325">Why do you like technical communication?</span><br>I can be creative and analytical. It's a very open major so I can explore computer science, design, and English classes.</p>
+	    <p><span style="color: #20c1dd; font-weight: 325">How did you hear about technical communication?</span><br>My aunt told me about technical writers when I was a junior in high school</p>
+		<p><span style="color: #20c1dd; font-weight: 325">What are your plans after graduation?</span><br>work for a few years as a designer then go to grad school in HCI</p>
+		<p><span style="color: #20c1dd; font-weight: 325">What is your dream job?</span><br>UX designer or multimedia specialist or a pirate</p>
+		</div>
+		  </div></div>
+    </div>
+
+    <div class="LightmySlides">
+      <div class="Lightnumbertext">2 / 10</div>
+	  <div class="container"><div class="row">
+		<div class="col-2"><img src="images/people_LightOrange.png" style="width:100%"></div>
+		<div class="col-10">
+		<h1 style="color: #fcc71b">Student B <span style="font-size: 50%">(Senior)</span></h1>
+		  <p>Major(s): Technical Communication, Philosophy</p>
+		<p>Minor(s): N/A</p>
+		<hr style="margin-top:1rem; margin-bottom:1rem;">
+		  <p><span style="color: #fcc71b; font-weight: 375">Why do you like technical communication?</span><br>I am interested in studying technical writing and editing and pursuing it as a career.</p>
+	    <p><span style="color: #fcc71b; font-weight: 375">How did you hear about technical communication?</span><br>Through an acquaintance in a casual setting</p>
+		<p><span style="color: #fcc71b; font-weight: 375">What are your plans after graduation?</span><br>Pursuing my master's degree in RCPC at ISU</p>
+		<p><span style="color: #fcc71b; font-weight: 375">What is your dream job?</span><br>Technical editor</p>
+		</div>
+		  </div></div>
+      
+    </div>
+	  
+	<div class="LightmySlides">
+      <div class="Lightnumbertext">3 / 10</div>
+	  <div class="container"><div class="row">
+		<div class="col-2"><img src="images/people_Pink.png" style="width:100%"></div>
+		<div class="col-10">
+		<h1 style="color: #ee2a7b">Student C <span style="font-size: 50%">(Senior)</span></h1>
+			<p>Major(s): Technical Communication, English</p>
+		<p>Minor(s): N/A</p>
+		<hr style="margin-top:1rem; margin-bottom:1rem;">
+		  <p><span style="color: #ee2a7b; font-weight: 325">Why do you like technical communication?</span><br>Interesting way to approach and think about writing </p>
+	    <p><span style="color: #ee2a7b; font-weight: 325">How did you hear about technical communication?</span><br>High school</p>
+		<p><span style="color: #ee2a7b; font-weight: 325">What are your plans after graduation?</span><br>Work at Nationwide</p>
+		<p><span style="color: #ee2a7b; font-weight: 325">What is your dream job?</span><br>Creating training communications for training programs </p>
+		</div>
+		  </div></div>
+      
+    </div>
+	  
+	<div class="LightmySlides">
+      <div class="Lightnumbertext">4 / 10</div>
+	  <div class="container"><div class="row">
+		<div class="col-2"><img src="images/people_LightGreen.png" style="width:100%"></div>
+		<div class="col-10">
+		<h1 style="color: #97c440">Student D <span style="font-size: 50%">(Senior)</span></h1>
+				<p>Major(s): Technical Communication</p>
+		<p>Minor(s): N/A</p>
+		<hr style="margin-top:1rem; margin-bottom:1rem;">
+		  <p><span style="color: #97c440; font-weight: 325">Why do you like technical communication?</span><br>Communication is interesting but I guess I like the theory and technique behind it more than learning about literature and history like in most humanities.</p>
+	    <p><span style="color: #97c440; font-weight: 325">How did you hear about technical communication?</span><br>Saw the major listed on ISU website.</p>
+		<p><span style="color: #97c440; font-weight: 325">What are your plans after graduation?</span><br>Well any industry would work, something along the lines of publishing or printing (electronic or paper)</p>
+		<p><span style="color: #97c440; font-weight: 325">What is your dream job?</span><br>I don't like work so it's hard to say. Any job that pays fairly and the people are good to deal with. Or just become a chicken rancher.</p>
+		</div>
+		  </div></div>
+      
+    </div>
+	  
+	<div class="LightmySlides">
+      <div class="Lightnumbertext">5 / 10</div>
+	  <div class="container"><div class="row">
+		<div class="col-2"><img src="images/people_Yellow.png" style="width:100%"></div>
+		<div class="col-10">
+		<h1 style="color: #E6E501;">Student E <span style="font-size: 50%">(Senior)</span></h1>
+				<p>Major(s): Technical Communication</p>
+		<p>Minor(s): Computer Science, Design Studies</p>
+		<hr style="margin-top:1rem; margin-bottom:1rem;">
+		  <p><span style="color: #E6E501; font-weight: 400">Why do you like technical communication?</span><br>I like the flexibility of getting to learn all kinds of interesting topics while making sure that documents and information is as effective as possible for its users.</p>
+	    <p><span style="color: #E6E501; font-weight: 400">How did you hear about technical communication?</span><br>English 214(X at the time) freshman year</p>
+		<p><span style="color: #E6E501; font-weight: 400">What are your plans after graduation?</span><br>Full-time job as a Business Analyst/UX Designer at Kingland Systems in Ames</p>
+		<p><span style="color: #E6E501; font-weight: 400">What is your dream job?</span><br>Tech comm job: User Experience Designer at a tech company; non-tech-comm job: National Geographic photographer</p>
+		</div>
+		  </div></div>
+      
+    </div>
+	  
+	<div class="LightmySlides">
+      <div class="Lightnumbertext">6 / 10</div>
+	  <div class="container"><div class="row">
+		<div class="col-2"><img src="images/people_Purple.png" style="width:100%"></div>
+		<div class="col-10">
+		<h1 style="color: #512b7b">Student F <span style="font-size: 50%">(Junior)</span></h1>
+				<p>Major(s): Technical Communication, Communication Studies</p>
+		<p>Minor(s): French</p>
+		<hr style="margin-top:1rem; margin-bottom:1rem;">
+		  <p><span style="color: #512b7b; font-weight: 325">Why do you like technical communication?</span><br>I love the creativity and ability to continuously learn new things</p>
+	    <p><span style="color: #512b7b; font-weight: 325">How did you hear about technical communication?</span><br>From taking ENGL214 with Geoff Sauer</p>
+		<p><span style="color: #512b7b; font-weight: 325">What are your plans after graduation?</span><br>Grad school</p>
+		<p><span style="color: #512b7b; font-weight: 325">What is your dream job?</span><br>Lawyer or university professor</p>
+		</div>
+		  </div></div>
+      
+    </div>
+	  
+	<div class="LightmySlides">
+      <div class="Lightnumbertext">7 / 10</div>
+	  <div class="container"><div class="row">
+		<div class="col-2"><img src="images/people_Orange.png" style="width:100%"></div>
+		<div class="col-10">
+		<h1 style="color: #f26722">Student G <span style="font-size: 50%">(Junior)</span></h1>
+				<p>Major(s): Technical Communication, English</p>
+		<p>Minor(s): International Studies</p>
+		<hr style="margin-top:1rem; margin-bottom:1rem;">
+		  <p><span style="color: #f26722; font-weight: 325">Why do you like technical communication?</span><br>I’m also doubling in English and wanted some realistic work skills on top of my ability to write.</p>
+	    <p><span style="color: #f26722; font-weight: 325">How did you hear about technical communication?</span><br>Through my academic advisor</p>
+		<p><span style="color: #f26722; font-weight: 325">What are your plans after graduation?</span><br>Pursue a career in Tech Comm.</p>
+		<p><span style="color: #f26722; font-weight: 325">What is your dream job?</span><br>Being a manager of a team of tech writers or being a novelist.</p>
+		</div>
+		  </div></div>
+      
+    </div>
+	  
+	  
+	<div class="LightmySlides">
+      <div class="Lightnumbertext">8 / 10</div>
+	  <div class="container"><div class="row">
+		<div class="col-2"><img src="images/people_Red.png" style="width:100%"></div>
+		<div class="col-10">
+		<h1 style="color: #ed1c24">Student H <span style="font-size: 50%">(Junior)</span></h1>
+				<p>Major(s): Technical Communication, Linguistics</p>
+		<p>Minor(s): TESL/TEFL</p>
+		<hr style="margin-top:1rem; margin-bottom:1rem;">
+		  <p><span style="color: #ed1c24; font-weight: 325">Why do you like technical communication?</span><br>I really like writing in a structured, informational format, and I'm good at it.</p>
+	    <p><span style="color: #ed1c24; font-weight: 325">How did you hear about technical communication?</span><br>My advisor.</p>
+		<p><span style="color: #ed1c24; font-weight: 325">What are your plans after graduation?</span><br>To teach English abroad in Eastern Europe.</p>
+		<p><span style="color: #ed1c24; font-weight: 325">What is your dream job?</span><br>Technical writer for Grammarly.</p>
+		</div>
+		  </div></div>
+      
+    </div>
+	  
+	  
+	<div class="LightmySlides">
+      <div class="Lightnumbertext">9 / 10</div>
+	  <div class="container"><div class="row">
+		<div class="col-2"><img src="images/people_Navy.png" style="width:100%"></div>
+		<div class="col-10">
+		<h1 style="color: #2b3990">Student I <span style="font-size: 50%">(Sophomore)</span></h1>
+		<p>Major(s): Technical Communication</p>
+		<p>Minor(s): General Business</p>
+		<hr style="margin-top:1rem; margin-bottom:1rem;">
+		  <p><span style="color: #2b3990; font-weight: 325">Why do you like technical communication?</span><br>It is a broad major and set of skills that is needed in all career areas. I know it will prepare me well for the career I choose and open up many doors for me.</p>
+	    <p><span style="color: #2b3990; font-weight: 325">How did you hear about technical communication?</span><br>English 214</p>
+		<p><span style="color: #2b3990; font-weight: 325">What are your plans after graduation?</span><br>Earn an MBA</p>
+		<p><span style="color: #2b3990; font-weight: 325">What is your dream job?</span><br>Tech Writer/Administrator</p>
+		</div>
+		  </div></div>
+      
+    </div>
+	  
+	  
+	<div class="LightmySlides">
+      <div class="Lightnumbertext">10 / 10</div>
+	  <div class="container"><div class="row">
+		<div class="col-2"><img src="images/people_DarkGreen.png" style="width:100%"></div>
+		<div class="col-10">
+		<h1 style="color: #0D4A09">Student J <span style="font-size: 50%">(Freshman)</span></h1>
+				<p>Major(s): Technical Communication</p>
+		<p>Minor(s): Digital Media</p>
+		<hr style="margin-top:1rem; margin-bottom:1rem;">
+		  <p><span style="color: #0D4A09; font-weight: 325">Why do you like technical communication?</span><br>It seems like a way to grow my technology skills and provide a reliable source of income while I pursue other passions</p>
+	    <p><span style="color: #0D4A09; font-weight: 325">How did you hear about technical communication?</span><br>My advisor talked to me about it during my first visit to Iowa State as a possible branch for English majors to look into</p>
+		<p><span style="color: #0D4A09; font-weight: 325">What are your plans after graduation?</span><br>I'm still looking as of now. I intend to have my feelers out as I explore undergraduate research, internships, and career fairs to see where I should try to go.</p>
+		<p><span style="color: #0D4A09; font-weight: 325">What is your dream job?</span><br>I would love to design and write for zoos and other animal-related agencies, taking research and facts and turning it into something for the general public to consume. Someday, I would also love to become an established fiction writer as I could carry my love of reading and literature for the rest of my life, even once I retire from more hands-on work at zoos.</p>
+		</div>
+		  </div></div>
+    </div>
+    
+    <a class="Lightprev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="Lightnext" onclick="plusSlides(1)">&#10095;</a>
+    
+    <div class="Lightcolumn">
+      <img class="Lightdemo Lightcursor" src="images/blueGirlHead.png" style="width:75%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="Lightcolumn">
+      <img class="Lightdemo Lightcursor" src="images/yellowGirlHead.png" style="width:75%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+	<div class="Lightcolumn">
+      <img class="Lightdemo Lightcursor" src="images/pinkGirlHead.png" style="width:75%" onclick="currentSlide(3)" alt="Snow">
+    </div>
+	<div class="Lightcolumn">
+      <img class="Lightdemo Lightcursor" src="images/LIGHTyellowHead.png" style="width:75%" onclick="currentSlide(4)" alt="Snow">
+    </div>
+	<div class="Lightcolumn">
+      <img class="Lightdemo Lightcursor" src="images/greenGirlHead.png" style="width:75%" onclick="currentSlide(5)" alt="Snow">
+    </div>
+	 <div class="Lightcolumn">
+      <img class="Lightdemo Lightcursor" src="images/purpleGirlHead.png" style="width:75%" onclick="currentSlide(6)" alt="Nature and sunrise">
+    </div>
+    <div class="Lightcolumn">
+      <img class="Lightdemo Lightcursor" src="images/orangeBoiHead.png" style="width:75%" onclick="currentSlide(7)" alt="Snow">
+    </div>
+	<div class="Lightcolumn">
+      <img class="Lightdemo Lightcursor" src="images/redGirlHead.png" style="width:75%" onclick="currentSlide(8)" alt="Snow">
+    </div>
+	<div class="Lightcolumn">
+      <img class="Lightdemo Lightcursor" src="images/navyGirlHead.png" style="width:75%" onclick="currentSlide(9)" alt="Snow">
+    </div>
+	<div class="Lightcolumn">
+      <img class="Lightdemo Lightcursor" src="images/DarkGREENHead.png" style="width:75%" onclick="currentSlide(10)" alt="Snow">
+    </div>
+  </div>
+</div>
+
+		
+		
+      <h2>Collective Student Data</h2>
+	  <p>The data below represents the ten students who took the survey. It is only 10 of 21 technical communication students. It does not represent the current gender ratio or student classification of all technical communication students.</p>
+      <br>
+      <div class="container">
+		<div class="row">
+			<div class="col-sm-12  col-lg-4">
+				<h4>Gender</h4>
+				<div>
+				<div id="piechart" style="width: auto; height: 200%;"></div>
+				</div>
+			</div>
+			
+			<div class="col-sm-12  col-lg-4">
+				<h4>Classification</h4>
+				<div id="barchart_classification" style="width: 100%; height: auto;"></div>
+			</div>
+			
+			<div class="col-sm-12  col-lg-4">
+				<h4>Percentage of Students</h4>
+				<div id="columnchart_material" style="width: 100%; height: auto;"></div>
+			</div>
+			
+		 </div>
+		 <br>
+		  
+		  <div class="row">
+			<div class="col-sm-12  col-lg-6">
+				<h4>Most Commonly Paired Majors</h4>
+				<ol>
+					<li>English (x3)</li>
+					<li>Linguistics (x1)</li>
+					<li>Philosophy (x1)</li>
+				</ol>
+			</div>
+			
+			<div class="col-sm-12  col-lg-6">
+				  <h4>Most Commonly Paired Minors</h4>
+				  <ol>
+					<li>Design (x2)</li>
+					<li>International Studies (x1)</li>
+					<li>General Business (x1)</li>
+				  </ol>
+			</div>
+		 </div> 
+		 <hr>
+		 <div class="row">
+		 	<div class="col-12">
+				
+				<h4>Path to Technical Communication</h4>
+				<p>Many students start off with a different major. Seven of the ten students that were interviewed had a different major before technical communication. The Sankey diagram below shows how they got to technical communication. The white areas represent before the students got to Iowa State. Because not everyone started at the same time, the white areas end at different locations. The colorful part correlate with student colors above and the grey areas represent when the students change to technical communication up to the current semester.</p>
+				<img src="images/sankeyLable.svg" alt="sample" style=" width: 100%">
+				<p></p>
+				<div id="sankey_multiple" style="width: 100%; height: 400px;"></div>
+			</div>
+		 </div>
+
+	  <hr>
+		 <div class="row">
+			 <div class="col-lg-7 col-sm-12">
+				<h1>Students After Graduation</h1>
+				 <br>
+			<div class="row">
+			 <div class="col-sm-2  col-lg-3">
+				 <img style="width: 100%" src="images/graduation.png" alt="">
+			 </div>
+			 <div class="col-sm-10  col-lg-9">
+				
+				<div id="barchart_values" style="width: 100%; height: auto;"></div>
+			 </div>
+			 </div>
+				 <br>
+				 <div class="row">
+			<div class="col-12"><h4>Post Graduation Plans</h4></div>
+			<div class="col-4">
+				<img src="images/postGradSchool.png" alt="" style="width: 80%">
+				<p>5 students plan to go to grad school.</p>
+			</div>
+			<div class="col-4">
+				<img src="images/postGradWork.png" alt="" style="width: 80%">
+				<p>4 students plan on getting a tech comm related job.</p>
+			</div>
+			<div class="col-4">
+				<img src="images/postGradEurope.png" alt="" style="width: 80%">
+				<p>1 student plans on teaching English in Eastern Europe.</p>
+			</div>
+				 </div>
+		  </div>
+			 <div class="col-lg-5  col-sm-12">
+			 <div class="col-12">
+				<h4>Dream Job</h4>
+				 <img src="images/UXblue.png" alt="" style="width: 9%; margin: 6px;">UX designer or multimedia specialist
+				 	<hr style="margin: 2px;">
+				 <img src="images/editorYellow.png" alt="" style="width: 9%; margin: 6px;">Technical editor
+					 <hr style="margin: 2px;">
+				 <img src="images/trainingPink.png" alt="" style="width: 9%; margin: 6px;">Create training communications for training programs
+				 	  <hr style="margin: 2px;">
+				 <img src="images/printing.png" alt="" style="width: 9%; margin: 6px;">Something with publishing or printing
+					 <hr style="margin: 2px;">
+				 <img src="images/UXgreen.png" alt="" style="width: 9%; margin: 6px;">User Experience Designer at a tech company
+					 <hr style="margin: 2px;">
+				 <img src="images/laywer.png" alt="" style="width: 9%; margin: 6px;">Lawyer or university professor
+					 <hr style="margin: 2px;">
+				 <img src="images/writerRed.png" alt="" style="width: 9%; margin: 6px;">Technical writer for Grammarly
+					 <hr style="margin: 2px;">
+				 <img src="images/writerOrange.png" alt="" style="width: 9%; margin: 6px;">Manager of a team of tech writers or being a novelist
+				 	<hr style="margin: 2px;">
+				 <img src="images/writerBlue.png" alt="" style="width: 9%; margin: 6px;">Tech Writer/Administrator
+				 	   <hr style="margin: 2px;">
+				 <img src="images/zoo.png" alt="" style="width: 9%; margin: 6px;">write for zoos and other animal-related agencies
+			 </div>
+		  </div>
+		 </div>
+      </div>
+      <hr>
+    </div>
+	  
+	  <footer class="text-center">
+        <div class="container">
+		  <div class="row">
+            <div class="col-3">
+			 <br>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfd2ESoxR7RbpYvOzNvRKUrqE_KpdgNezmF5va1QHAiMmwnPg/viewform?usp=sf_link" target="_blank" style="color: white"><img src="images/studentform.png" style="width: 25%; margin: .5em"></a>
+				<br>
+				<h6><a href="https://docs.google.com/forms/d/e/1FAIpQLSfd2ESoxR7RbpYvOzNvRKUrqE_KpdgNezmF5va1QHAiMmwnPg/viewform?usp=sf_link" target="_blank" style="color: white; text-decoration: none;">Student Form</a></h6>
+            </div>
+			<div class="col-3">
+			 <br>
+              <a href="https://www.registrar.iastate.edu/enrollment/enrollment-by-major" target="_blank" style="color: white"><img src="images/factbook.png" style="width: 25%;  margin: .5em"></a>
+				<br>
+				<h6><a href="https://www.registrar.iastate.edu/enrollment/enrollment-by-major" target="_blank" style="color: white; text-decoration: none;">ISU Fact Book</a></h6>
+            </div>
+			<div class="col-3">
+			 <br>
+             <a href="https://engl.iastate.edu/undergraduate-students/majors/technical-communication-b-s-or-minor/" target="_blank" style="color: white"><img src="images/tchomepage.png" style="width: 25%; margin: .5em"></a>
+				<br>
+				<h6><a href="https://engl.iastate.edu/undergraduate-students/majors/technical-communication-b-s-or-minor/" target="_blank" style="color: white; text-decoration: none;">Iowa State Technical<br>Communication Homepage</a></h6>
+            </div>
+			<div class="col-3">
+			 <br>
+             <a href="http://catalog.iastate.edu/collegeofliberalartsandsciences/technicalcommunication/" target="_blank" style="color: white"><img src="images/tcclasses.png" style="width: 25%; margin: .5em"></a>
+				<br>
+				<h6><a href="http://catalog.iastate.edu/collegeofliberalartsandsciences/technicalcommunication/" target="_blank" style="color: white; text-decoration: none;">Technical Communication<br>Courses</a></h6>
+            </div>
+          </div>
+  
+        </div>
+	  </footer>
+	  
+	  <script type="text/javascript">
+  google.charts.load("current", {packages:["sankey"]});
+  google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'From');
+    data.addColumn('string', 'To');
+    data.addColumn('number', 'Students');
+    data.addRows([
+       ['Fall 2015', 'Spring 2016', 6],
+	   ['Accounting, F2015', 'Accounting, S2016', 1],
+		
+		['Spring 2016', 'Fall 2016', 3],
+		['Spring 2016', 'English Education, F2016', 1],
+		['Spring 2016', 'English and Design, F2016', 1],
+		['Spring 2016', 'Journalism, F2016', 1],
+		['Accounting, S2016', 'Accounting, F2016', 1],
+		
+		['Fall 2016', 'Spring 2017', 3],
+		['English Education, F2016', 'Technical Communication, S2017', 1],
+		['English and Design, F2016', 'Technical Communication, S2017', 1],
+		['Journalism, F2016', 'Technical Communication, S2017', 1],
+		['Accounting, F2016', 'Accounting, S2017', 1],
+		
+		['Spring 2017', 'Fall 2018', 1],
+		['Spring 2017', 'Engineering, F2017', 1],
+		['Spring 2017', 'Open Option, F2017', 1],
+		['Technical Communication, S2017', 'Technical Communication, F2017', 1],
+		['Technical Communication, S2017', 'Technical Communication, F2017', 1],
+		['Technical Communication, S2017', 'Technical Communication, F2017', 1],
+		['Accounting, S2017', 'Technical Communication, F2017', 1],
+		
+	    ['Technical Communication, F2017', 'Technical Communication, S2018', 1],
+		['Technical Communication, F2017', 'Technical Communication, S2018', 1],
+		['Technical Communication, F2017', 'Technical Communication, S2018', 1],
+		['Technical Communication, F2017', 'Technical Communication, S2018', 1],
+		['Open Option, F2017', 'Technical Communication, S2018', 1],
+		['Engineering, F2017', 'Technical Communication, S2018', 1],
+		['Fall 2018', 'Spring 2018', 1],
+		
+		['Technical Communication, S2018', 'Technical Communication, F2018', 1],
+		['Technical Communication, S2018', 'Technical Communication, F2018', 1],
+		['Technical Communication, S2018', 'Technical Communication, F2018', 1],
+		['Technical Communication, S2018', 'Technical Communication, F2018', 1],
+		['Technical Communication, S2018', 'Technical Communication, F2018', 1],
+		['Technical Communication, S2018', 'Technical Communication, F2018', 1],
+		['Spring 2018', 'Open Option, F2018', 1],
+		
+		['Technical Communication, F2018', 'Technical Communication, S2019', 1],
+		['Technical Communication, F2018', 'Technical Communication, S2019', 1],
+		['Technical Communication, F2018', 'Technical Communication, S2019', 1],
+		['Technical Communication, F2018', 'Technical Communication, S2019', 1],
+		['Technical Communication, F2018', 'Technical Communication, S2019', 1],
+		['Technical Communication, F2018', 'Technical Communication, S2019', 1],
+		['Open Option, F2018', 'Genetics, S2019', 1],
+		
+		['Technical Communication, S2019', 'Technical Communication, F2019', 1],
+		['Technical Communication, S2019', 'Technical Communication, F2019', 1],
+		['Technical Communication, S2019', 'Technical Communication, F2019', 1],
+		['Technical Communication, S2019', 'Technical Communication, F2019', 1],
+		['Technical Communication, S2019', 'Technical Communication, F2019', 1],
+		['Technical Communication, S2019', 'Technical Communication, F2019', 1],
+		['Genetics, S2019', 'Technical Communication, F2019', 1],
+  
+    ]);
+	   
+var colors = ['F9F9F9', 'F9F9F9', 'EE2A7B','EE2A7B', 'F9F9F9', '#20c1dd', 'yellow', 'orange', 'EE2A7B', 'F9F9F9', 'B8C0C1', 'EE2A7B',  'F9F9F9', '512B7B', 'F15A29', 'B8C0C1',  'B8C0C1', 'F9F9F9', 'B8C0C1', '234723', 'B8C0C1', '234723', 'B8C0C1', 'B8C0C1',];
+
+    var options = {
+      height: 400,
+	  width: 1100,
+      sankey: {
+        node: {
+          colors: colors
+        },
+        link: {
+          colorMode: 'gradient',
+          colors: colors,
+        }
+      }
+    };
+    
+	
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+    chart.draw(data, options);
+   }
+</script>
+	  
+	  
+  <script>
+function openModal() {
+  document.getElementById("LightmyModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("LightmyModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("LightmySlides");
+  var dots = document.getElementsByClassName("Lightdemo");
+  var captionText = document.getElementById("Lightcaption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" Lightactive", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " Lightactive";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+	  
+  <script type="text/javascript">
+    google.charts.load("current", {packages:['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Genre', 'Interviewed Students', 'Students NOT Interviewed', { role: 'annotation' } ],
+        ['Fresh.', 1, 2, ''],
+        ['Soph.', 1, 1,  ''],
+        ['Juniors', 3, 0, ''],
+		['Seniors', 5, 8, ''],
+		['Total', 10, 11, ''],
+      ]);
+
+      var options = {
+        legend: { position: 'top', maxLines: 3 },
+        bar: { groupWidth: '75%' },
+        isStacked: 'percent',
+		series: {
+			0:{color:'#A81E29'},
+			1:{color:'#EEE'},
+		}
+      };
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+      var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_material"));
+      chart.draw(view, options);
+  }
+  </script>
+	  
+  <script type="text/javascript">
+    google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Classification", "Number of Interviewed", { role: "style" } ],
+        ["Senior", 5, "#A81E29"],
+        ["Junior", 3, "#EF445D"],
+        ["Sophomore", 1, "gold"],
+        ["Freshman", 1, "color: #FFFF99"]
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+      var options = {
+        bar: {groupWidth: "85%"},
+        legend: { position: "none" },
+      };
+      var chart = new google.visualization.BarChart(document.getElementById("barchart_classification"));
+      chart.draw(view, options);
+  }
+  </script>
+	  
+  <script type="text/javascript">
+    google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Semester", "Number of students graduating", { role: "style" } ],
+        ["Fall 2019", 3, "#A81E29"],
+        ["Spring 2020", 3, "#EF445D"],
+        ["Spring 2021", 2, "gold"],
+        ["Spring 2022", 1, "color: #FFFF99"],
+		["Spring 2023", 1, "color: #CAC7A7"]
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+      var options = {
+        bar: {groupWidth: "85%"},
+        legend: { position: "none" },
+		title: "Expected Graduation",
+		titleTextStyle: {
+       		fontName:'Segoe UI',
+			fontSize: 24,
+			bold: true
+			}
+      };
+      var chart = new google.visualization.BarChart(document.getElementById("barchart_values"));
+      chart.draw(view, options);
+  }
+  </script>
+	  
+<script>
+function myFunctionOpenRows() {
+  var x = document.getElementsByClassName("row1");
+  var y = document.getElementsByClassName("row2");
+  var s = document.getElementById("openRowsButton")
+  var w = document.getElementById("closeRowsButton")
+  x[0].style.display = "block";
+  x[1].style.display = "block";
+  x[2].style.display = "block";
+  x[3].style.display = "block";
+  y[0].style.display = "block";
+  y[1].style.display = "block";
+  y[2].style.display = "block";
+  s.style.display ="none"
+  w.style.display ="inline"
+}
+</script>
+	  
+<script>
+function myFunctionCloseRows() {
+  var x = document.getElementsByClassName("row1");
+  var y = document.getElementsByClassName("row2");
+  var s = document.getElementById("openRowsButton")
+  var w = document.getElementById("closeRowsButton")
+  x[0].style.display = "none";
+  x[1].style.display = "none";
+  x[2].style.display = "none";
+  x[3].style.display = "none";
+  y[0].style.display = "none";
+  y[1].style.display = "none";
+  y[2].style.display = "none";
+  s.style.display ="inline"
+  w.style.display ="none"
+}
+</script>
+	  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.2.1.js"></script>
+  </body>
+</html>
